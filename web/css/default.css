@@ -27,3 +27,12 @@ header, footer
 #center{
     text-align:center;
 }
+.fab{
+  background-color: white; 
+  max-width: 950px; 
+  margin: 10px auto; 
+  padding: 10px; 
+  text-align: center;
+  margin-bottom: 10px;
+  border-radius: 50p
+}
