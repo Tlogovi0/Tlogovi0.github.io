@@ -24,3 +24,6 @@ header, footer
   display: inline-block;
   list-style-type: none;
 }
+#center{
+    text-align:center;
+}
