@@ -21,6 +21,7 @@ header, footer
   text-align: center;
 }
 #nav ul {
+
   
 
 }
@@ -34,4 +35,6 @@ header, footer
   border-radius: 50p
 }
 
+ display: inline-block;
+  list-style-type: none;
 
