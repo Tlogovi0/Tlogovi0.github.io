@@ -37,60 +37,7 @@ header, footer
 
  display: inline-block;
   list-style-type: none;
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Content Site</title>
-    <link rel="stylesheet" href="styles/brand.css">
-</head>
-<body>
-    <header>
-        <!-- Header content here -->
-    </header>
 
-    <nav>
-        <ul>
-            <li><a href="contents/index.php" id="home">Home</a></li>
-            <li><a href="contents/introduction.php" id="introduction">Introduction</a></li>
-            <li><a href="contents/contract.php" id="contract">Contract</a></li>
-            <li><a href="contents/brand.php" id="brand">Brand</a></li>
-            
-        </ul>
-    </nav>
-
-    <main id="main-content">
-        <!-- Main content will be dynamically loaded here -->
-    </main>
-
-    <footer>
-        <!-- Footer content here -->
-    </footer>
-
-    <script src="scripts/main.js"></script>
-</body>
-</html>
-document.addEventListener('DOMContentLoaded', function() {
-    const links = document.querySelectorAll('nav a');
-
-    links.forEach(function(link) {
-        link.addEventListener('click', function(event) {
-            event.preventDefault();
-            const url = this.getAttribute('href');
-            fetchContent(url);
-        });
-    });
-
-    function fetchContent(url) {
-        fetch(url)
-        .then(response => response.text())
-        .then(html => {
-            document.getElementById('main-content').innerHTML = html;
-        })
-        .catch(error => console.error('Error fetching content:', error));
-    }
-});
 <a href="http://https://tlogovi0.github.io/web/contract.html/index.php">Visit Intro Page</a>
 <a href="http://https://tlogovi0.github.io/web/contract.html/original_multipage_folder">Original Multipage Folder</a>
 
