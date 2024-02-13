@@ -37,4 +37,26 @@ header, footer
 
  display: inline-block;
   list-style-type: none;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Content Demo</title>
+</head>
+<body>
+    <h1>Welcome to the Dynamic Content Demo!</h1>
+    <p>This page demonstrates dynamic content using JavaScript.</p>
+    <p id="dynamic-content">Loading...</p>
 
+    <script>
+        // Define dynamic content
+        const myName = "ChatGPT";
+
+        // Update the paragraph content with dynamic data
+        document.getElementById("dynamic-content").textContent = `Hello! My name is ${myName}.`;
+
+        // You can add more dynamic content or functionality as needed
+    </script>
+</body>
+</html>
