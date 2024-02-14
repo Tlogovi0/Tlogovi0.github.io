@@ -39,6 +39,43 @@ header, footer
 }
 
  display: inline-block;
- 
+ * Brand Styles */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #666;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    color: #000;
+    background-color: #eee;
+}
+
+.brand-logo {
+    margin-right: 20px; 
+}
+
+.brand-logo img {
+    width: 300px; 
+    height: auto; 
+    float: right; 
+}
 
 
