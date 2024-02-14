@@ -42,7 +42,7 @@ header, footer
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 40px 50px;
 }
 
 nav ul {
@@ -71,8 +71,8 @@ nav ul li a:hover {
 }
 
 .brand-logo img {
-    width: 600px; 
-    height: auto; 
+    width: 800px; 
+    height: 800px; 
     float: right; 
 }
 
