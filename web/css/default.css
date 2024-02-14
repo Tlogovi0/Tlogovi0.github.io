@@ -39,45 +39,6 @@ header, footer
 }
 
  display: inline-block;
-  list-style-type: none;
-
-.header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px 50px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    color: #666;
-    text-decoration: none;
-    padding: 10px;
-}
-
-nav ul li a:hover {
-    color: #000;
-    background-color: #eee;
-}
-
-.brand-logo {
-    margin-right: 50px; 
-}
-
-.brand-logo img {
-    width:100 px; 
-    height: 100px; 
-    float: right; 
-}
-
+ 
 
 
