@@ -38,37 +38,5 @@ header, footer
  display: inline-block;
   list-style-type: none;
 
-* Brand Styles */
-.brand-logo {
-    font-family: 'Your Brand Font', sans-serif;
-    font-size: 24px;
-    color: #333; /* Your brand color */
-    margin: 0;
-}
 
-header {
-    background-color: green; /* Header background color */
-    padding: 20px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    color: white; /* Link color */
-    text-decoration: none;
-    padding: 10px;
-}
-
-nav ul li a:hover {
-    color: #000; /* Link color on hover */
-    background-color: bleu; /* Background color on hover */
-}
 
