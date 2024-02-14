@@ -5,6 +5,7 @@ body
     color: rgb(221, 227, 210); 
     margin-right: 100px;
     margin-left: 100px;
+    text-align: justify;
 }
 .center {
   display: block;
