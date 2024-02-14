@@ -47,7 +47,7 @@ header, footer
 }
 
 header {
-    background-color: #f0f0f0; /* Header background color */
+    background-color: green; /* Header background color */
     padding: 20px;
 }
 
@@ -62,7 +62,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #666; /* Link color */
+    color: white; /* Link color */
     text-decoration: none;
     padding: 10px;
 }
