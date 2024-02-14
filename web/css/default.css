@@ -37,7 +37,7 @@ header, footer
 
  display: inline-block;
   list-style-type: none;
-/* Brand Styles */
+
 .header-content {
     display: flex;
     align-items: center;
@@ -67,13 +67,13 @@ nav ul li a:hover {
 }
 
 .brand-logo {
-    margin-right: 20px; /* Add margin to create space between logo and navigation */
+    margin-right: 50px; 
 }
 
 .brand-logo img {
-    width: 100px; /* Adjust the width of the logo */
-    height: auto; /* Maintain aspect ratio */
-    float: right; /* Float the logo to the right */
+    width: 50px; 
+    height: auto; 
+    float: right; 
 }
 
 
