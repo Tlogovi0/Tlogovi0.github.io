@@ -40,43 +40,41 @@ header, footer
 }
 
  display: inline-block;
- * Brand Styles */
-.header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
+body {
+    background-color: #F2E5D3; /* Light beige */
+    font-family: "Arial", sans-serif;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #D1C7B7; /* Light grey */
+    padding: 20px;
+}
+
+header {
+    background-color: #A79E94; /* Dark grey */
+    color: #FFFFFF; /* White */
+    padding: 10px 0;
+}
+
+h1 {
+    font-family: "Helvetica", sans-serif;
 }
 
 nav ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
 }
 
 nav ul li {
     display: inline;
+    margin-right: 20px;
 }
 
 nav ul li a {
-    color: #666;
     text-decoration: none;
-    padding: 10px;
+    color: #FFFFFF; /* White */
 }
-
-nav ul li a:hover {
-    color: #000;
-    background-color: #eee;
-}
-
-.brand-logo {
-    margin-right: 20px; 
-}
-
-.brand-logo img {
-    width: 200px; 
-    height: auto; 
-    float: right; 
-}
-
 
