@@ -21,14 +21,9 @@ header, footer
 {
   text-align: center;
 }
-#nav ul {
 
-  list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
 
-}
+
 .fab{
   background-color: indigo; 
   max-width: 950px; 
@@ -39,33 +34,16 @@ header, footer
   border-radius: 50p
 }
 
- display: inline-block;
-.logo {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 50px; 
-    height: auto; 
-}
+ display: inline-block 
 body {
     margin: 0;
     background-color: #F2E5D3; /* Light beige */
     font-family: Arial, sans-serif;
 }
 
-header {
-    background-color: #A79E94; /* Dark grey */
-    color: #FFFFFF; /* White */
-    padding: 10px 20px;
-    position: relative;
-}
 
-.logo {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    width: 50px;
-}
+
+
 
 nav ul {
     list-style-type: none;
