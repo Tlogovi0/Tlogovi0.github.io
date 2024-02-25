@@ -26,7 +26,7 @@ a:hover { color: rgb(139, 5, 0); }
   max-width: 950px; 
   margin: 10px auto; 
   padding: 10px; 
-  text-align: center;
+  text-align: justify;
   margin-bottom: 10px;
   border-radius: 50p
 }
