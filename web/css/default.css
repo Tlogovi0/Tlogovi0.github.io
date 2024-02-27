@@ -73,7 +73,8 @@ footer{
 .navbar {
   background-color: #333; 
 }
-header > div,h1, h2, h3, h4, h5,footer {
+
+header > div,h1, h2, h3, h4, h5,footer, nav {
     text-align: center;
 }
     
