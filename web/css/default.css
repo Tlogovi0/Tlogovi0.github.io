@@ -78,3 +78,7 @@ header > div,h1, h2, h3, h4, h5,footer, nav {
     text-align: center;
 }
     
+.navbar{
+	text-align: center;
+	margin: auto;
+}
