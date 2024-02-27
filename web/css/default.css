@@ -40,14 +40,14 @@ div{
 }
 
 nav{
-	background-color: green light;
+	background-color: white;
 	border: 1px solid;
 	margin: auto;
 	font-size: 20px;
 	padding: 12px;
 }
 nav a{
-	color: green light;
+	color: white;
 	padding: 10px;
 	margin: auto;
 }
