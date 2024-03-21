@@ -27,20 +27,6 @@
 </head>
 <body>
 
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    echo "<h2>Form Results:</h2>";
-    echo "Name: " . htmlspecialchars($_POST['name']) . "<br>";
-    echo "Email: " . htmlspecialchars($_POST['email']) . "<br>";
-    echo "Password: [protected]<br>";
-    echo "Age: " . htmlspecialchars($_POST['age']) . "<br>";
-    echo "Birthday: " . htmlspecialchars($_POST['birthday']) . "<br>";
-    echo "Favorite color: <span style='display:inline-block;width:20px;height:20px;background-color:" . htmlspecialchars($_POST['color']) . ";'></span><br>";
-    echo "Country: " . htmlspecialchars($_POST['country']) . "<br>";
-    echo "Pet(s): " . implode(", ", $_POST['pets'] ?? ["None"]) . "<br>";
-    echo "Bio: " . htmlspecialchars($_POST['bio']) . "<br>";
-    // Handling files and hidden input could involve specific processing and security measures.
-}
 
 else {
 ?>
