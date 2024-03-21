@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Profile Settings</title>
+</head>
+<body>
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    echo "<h2>Form Results:</h2>";
+    echo "Name: " . htmlspecialchars($_POST['name']) . "<br>";
+    echo "Email: " . htmlspecialchars($_POST['email']) . "<br>";
+    echo "Password: [protected]<br>";
+    echo "Age: " . htmlspecialchars($_POST['age']) . "<br>";
+    echo "Birthday: " . htmlspecialchars($_POST['birthday']) . "<br>";
+    echo "Favorite color: <span style='display:inline-block;width:20px;height:20px;background-color:" . htmlspecialchars($_POST['color']) . ";'></span><br>";
+    echo "Country: " . htmlspecialchars($_POST['country']) . "<br>";
+    echo "Pet(s): " . implode(", ", $_POST['pets'] ?? ["None"]) . "<br>";
+    echo "Bio: " . htmlspecialchars($_POST['bio']) . "<br>";
+    // Handling files and hidden input could involve specific processing and security measures.
+}
+
+else {
+?>
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="8"><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="0" max="130"><br><br>
+
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday"><br><br>
+
+        <label for="color">Favorite color:</label>
+        <input type="color" id="color" name="color"><br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="UK">UK</option>
+            <!-- Add other countries as needed -->
+        </select><br><br>
+
+        <fieldset>
+            <legend>Pets:</legend>
+            <input type="checkbox" id="dog" name="pets[]" value="Dog">
+            <label for="dog">Dog</label><br>
+            <input type="checkbox" id="cat" name="pets[]" value="Cat">
+            <label for="cat">Cat</label><br>
+            <input type="checkbox" id="bird" name="pets[]" value="Bird">
+            <label for="bird">Bird</label><br>
+            <!-- Add other pets as needed -->
+        </fieldset><br>
+
+        <label for="bio">Bio:</label><br>
+        <textarea id="bio" name="bio"></textarea><br><br>
+
+        <!-- For demonstration purposes, hidden fields can store user ID or session tokens -->
+        <input type="hidden" name="userid" value="12345">
+
+        <input type="submit" value="Submit">
+    </form>
+<?php
+}
+?>
+
+</body>
+</html>
