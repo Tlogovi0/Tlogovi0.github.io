@@ -67,8 +67,8 @@
 		  <img src="images/html_validation_button.gif" alt="Validate HTML" />
 		</a>
 		 
-		<a href="http://jigsaw.w3.org/css-validator/check/referer" style = "text-decoration: none">
-		 <img src="images/validation_button_css_rectangle_blue.gif" alt="Validate CSS" />
+		<a href="http://jigsaw.w3.org/css-validator/validator?uri=https://tlogovi0.github.io/web250.io/index.html">
+		 <img src="images/validation_button_css_rectangle_blue.gif" alt="Validate CSS" >
 
 		</a>
 		</p>
