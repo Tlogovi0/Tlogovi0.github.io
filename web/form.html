@@ -29,8 +29,8 @@
 
 
 else {
-?>
-    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" enctype="multipart/form-data">
+p?>
+
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required><br><br>
 
@@ -42,6 +42,9 @@ else {
 
         <label for="age">Age:</label>
         <input type="number" id="age" name="age" min="0" max="130"><br><br>
+	
+	<label for="Customer ID:">Customer ID:</label>
+        <input type="CustomerID" id="CustomerID" name="CustomerID" required minlength="8"><br><br>
 
         <label for="birthday">Birthday:</label>
         <input type="date" id="birthday" name="birthday"><br><br>
