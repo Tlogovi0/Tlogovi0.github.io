@@ -28,50 +28,45 @@
 <body>
 
 
-        <label for="name">Name:</label>
+         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+        <label for="name">Your Name:</label>
         <input type="text" id="name" name="name" required><br><br>
 
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required><br><br>
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required minlength="8"><br><br>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"><br><br>
 
-        <label for="age">Age:</label>
-        <input type="number" id="age" name="age" min="0" max="130"><br><br>
-	
-	<label for="Customer ID:">Customer ID:</label>
-        <input type="CustomerID" id="CustomerID" name="CustomerID" required minlength="8"><br><br>
+        <label for="address">Property Address:</label>
+        <input type="text" id="address" name="address" required><br><br>
 
-        <label for="birthday">Birthday:</label>
-        <input type="date" id="birthday" name="birthday"><br><br>
-
-        <label for="color">Favorite color:</label>
-        <input type="color" id="color" name="color"><br><br>
-
-        <label for="country">Country:</label>
-        <select id="country" name="country">
-            <option value="USA">USA</option>
-            <option value="Canada">Canada</option>
-            <option value="UK">UK</option>
-            <!-- Add other countries as needed -->
+        <label for="home_type">Home Type:</label>
+        <select id="home_type" name="home_type">
+            <option value="Detached House">Detached House</option>
+            <option value="Semi-detached House">Semi-detached House</option>
+            <option value="Townhouse">Townhouse</option>
+            <option value="Condo">Condo</option>
         </select><br><br>
 
+        <label for="bedrooms">Number of Bedrooms:</label>
+        <input type="number" id="bedrooms" name="bedrooms" min="1" max="10"><br><br>
+
         <fieldset>
-            <legend>Pets:</legend>
+            <legend>Do you have pets?</legend>
             <input type="checkbox" id="dog" name="pets[]" value="Dog">
             <label for="dog">Dog</label><br>
             <input type="checkbox" id="cat" name="pets[]" value="Cat">
             <label for="cat">Cat</label><br>
-            <input type="checkbox" id="bird" name="pets[]" value="Bird">
-            <label for="bird">Bird</label><br>
-            
+            <input type="checkbox" id="other" name="pets[]" value="Other">
+            <label for="other">Other</label><br>
         </fieldset><br>
 
-        <label for="bio">Bio:</label><br>
-        <textarea id="bio" name="bio"></textarea><br><br>
+        <label for="price">Asking Price ($):</label>
+        <input type="number" id="price" name="price" required><br><br>
 
-        <input type="hidden" name="userid" value="12345">
+        <label for="listing_date">Listing Date:</label>
+        <input type="date" id="listing_date" name="listing_date"><br><br>
 
         <input type="submit" value="Submit">
     </form>
