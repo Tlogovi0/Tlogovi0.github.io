@@ -1,10 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Login</title>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="./css/default.css" rel="stylesheet" type="text/css">	
+             <title>Tete Logovi the real Eagle | WEB250|Home</title>
 </head>
 <body>
+	<header>
+		<h1>Tete Logovi the real Eagle| WEB250</h1>
+
+<nav class="navbar">
+
+	<a href = "?p=index.php">Home</a>   |
+	<a href = "?p=introduction.php">Introduction</a>   |
+	<a href = "?p=contract.php">Contract</a>   |
+	<a href = "?p=brand.php">Brand</a>   |
+	<a href = "?p=login.php">Login</a>   |
+
+</nav>
+		
+</header>
+
+
     <h2>Login</h2>
     <form action="login_process.php" method="post">
         <label for="login_id">Login ID:</label><br>
@@ -18,7 +35,6 @@
 <?php
 session_start();
 
-// Check if form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Database connection
     $servername = "localhost";
@@ -31,18 +47,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("Connection failed: " . $conn->connect_error);
     }
 
-    // Retrieve user credentials from form
     $login_id = $_POST['login_id'];
     $password = $_POST['password'];
 
-    // Prepare SQL statement
+   
     $sql = "SELECT * FROM users WHERE login_id = ?";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("s", $login_id);
     $stmt->execute();
     $result = $stmt->get_result();
 
-    // Check if user exists and verify password
+   
     if ($result->num_rows == 1) {
         $user = $result->fetch_assoc();
         if (password_verify($password, $user['password'])) {
@@ -53,7 +68,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['last_name'] = $user['last_name'];
             $_SESSION['email'] = $user['email'];
 
-            // Redirect to welcome page or wherever you want to go after login
+            
             header("Location: welcome.php");
             exit();
         } else {
