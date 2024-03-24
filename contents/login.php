@@ -14,11 +14,12 @@
 	<a href = "?p=introduction.php">Introduction</a>   |
 	<a href = "?p=contract.php">Contract</a>   |
 	<a href = "?p=brand.php">Brand</a>   |
+	<a href = "?p=form.php">Form</a>   |
 	<a href = "?p=login.php">Login</a>  |  
 	
 
 </nav>
-    <title>Login Page</title>
+    
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -60,7 +61,6 @@
             background-color: #45a049;
         }
     </style>
-</head>
 <body>
     <div class="container">
         <h2>Login</h2>
