@@ -5,6 +5,21 @@
 <link href="./css/default.css" rel="stylesheet" type="text/css">	
              <title>Tete Logovi the real Eagle | WEB250|Home</title>
 </head>
+  <header>
+		<h1>Tete Logovi the real Eagle| WEB250</h1>
+
+<nav class="navbar">
+
+	<a href = "?p=index.php">Home</a>   |
+	<a href = "?p=introduction.php">Introduction</a>   |
+	<a href = "?p=contract.php">Contract</a>   |
+	<a href = "?p=brand.php">Brand</a>   |
+	<a href = "?p=form.php">form</a>   |
+	<a href = "?p=login.php">Login</a>  |  
+	
+
+</nav>
+  </header>
     <h1>Login Page</h1>
     <style>
         body {
