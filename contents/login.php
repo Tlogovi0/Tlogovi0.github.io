@@ -11,12 +11,13 @@
 
 <nav class="navbar">
 
-	<a href="index.htm">Home</a>   |
-	<a href="introduction.html">Introduction</a>   |
-	<a href="contract.html">Contract</a>   |
-	<a href="brand.html">Brand</a>   |
-	<a href="form.html">Form</a>   |
-	<a href="login.html">Login</a>   |
+	<a href = "?p=index.php">Home</a>   |
+	<a href = "?p=introduction.php">Introduction</a>   |
+	<a href = "?p=contract.php">Contract</a>   |
+	<a href = "?p=brand.php">Brand</a>   |
+	<a href = "?p=form.php">form</a>   |
+	<a href = "?p=login.php">Login</a>  |  
+	
 
 </nav>
 		<h1><h1> Login</h1></h1>
