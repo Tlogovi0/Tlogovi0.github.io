@@ -15,6 +15,7 @@
 	<a href = "?p=introduction.php">Introduction</a>   |
 	<a href = "?p=contract.php">Contract</a>   |
 	<a href = "?p=brand.php">Brand</a>   |
+	<a href = "?p=login.php">Login</a>  |  
 	
 
 </nav>
