@@ -5,7 +5,8 @@
 <link href="./css/default.css" rel="stylesheet" type="text/css">	
              <title>Tete Logovi the real Eagle | WEB250|Home</title>
 </head>
-  <header>
+<body>
+	<header>
 		<h1>Tete Logovi the real Eagle| WEB250</h1>
 
 <nav class="navbar">
@@ -19,7 +20,7 @@
 	
 
 </nav>
-    
+	</header>
     <style>
         body {
             font-family: Arial, sans-serif;
