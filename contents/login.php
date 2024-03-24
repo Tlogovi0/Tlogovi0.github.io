@@ -22,8 +22,7 @@
 </nav>
 		<h1><h1> Login</h1></h1>
 	</header>
-	<div class="fab">
-<p id="center">
+	
     <style>
         body {
             font-family: Arial, sans-serif;
