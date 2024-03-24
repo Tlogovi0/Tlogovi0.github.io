@@ -25,23 +25,43 @@
 	
 	<div class="fab">
 <p id="center">
-	<main>
-		<h2>Welcome to my Web page.</h2>
-		<p>You can find all the necessary information about me in my introduction page:</p>
-		<a href="introduction.html">Introduction</a>
-		</main></p></div>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
+	<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="loginForm" action="#" method="post">
+            <input type="email" id="email" name="email" placeholder="Email" required><br>
+            <input type="password" id="password" name="password" placeholder="Password" required><br>
+            <input type="submit" value="Login">
+        </form>
+        <p style="text-align: center;">or</p>
+        <button onclick="showRegistrationForm()">Register</button>
+        <form id="registrationForm" action="#" method="post" style="display: none;">
+            <input type="text" id="firstName" name="firstName" placeholder="First Name" required><br>
+            <input type="text" id="lastName" name="lastName" placeholder="Last Name" required><br>
+            <input type="email" id="regEmail" name="regEmail" placeholder="Email" required><br>
+            <input type="password" id="regPassword" name="regPassword" placeholder="Password" required><br>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required><br>
+            <input type="submit" value="Register">
+        </form>
+    </div>
 
-	<br>
+    <script>
+        function showRegistrationForm() {
+            var loginForm = document.getElementById('loginForm');
+            var registrationForm = document.getElementById('registrationForm');
+            var registerButton = document.querySelector('button');
+
+            if (registrationForm.style.display === "none") {
+                registrationForm.style.display = "block";
+                loginForm.style.display = "none";
+                registerButton.textContent = "Back to Login";
+            } else {
+                registrationForm.style.display = "none";
+                loginForm.style.display = "block";
+                registerButton.textContent = "Register";
+            }
+        }
+    </script>
 
 <footer> 
 	
