@@ -17,7 +17,7 @@
 	<a href = "?p=brand.php">Brand</a>   |
 	<a href = "?p=form.php">form</a>   |
 	<a href = "?p=login.php">Login</a>  |  
-    <a href = "?p=FizzBuzzBang.php">FizzBuzzBang</a>  |  
+        <a href ="?p=FizzBuzzBang.php">FizzBuzzBang</a>  |  
 	
 
 </nav>
