@@ -1,89 +1,191 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link href="./css/default.css" rel="stylesheet" type="text/css">	
-             <title>Tete Logovi the real Eagle | WEB250|Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        .container {
+            width: 300px;
+            margin: 0 auto;
+            padding-top: 50px;
+        }
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .registerbtn {
+            width: auto;
+            padding: 10px 18px;
+            background-color: #f44336;
+        }
+        .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            background-color: #ccc;
+        }
+    </style>
 </head>
 <body>
-	<header>
-		<h1>Tete Logovi the real Eagle| WEB250</h1>
 
-<nav class="navbar">
+<div class="container">
+    <h2>Login Form</h2>
+    <form action="/login" method="post">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Your email..">
 
-	<a href = "?p=index.php">Home</a>   |
-	<a href = "?p=introduction.php">Introduction</a>   |
-	<a href = "?p=contract.php">Contract</a>   |
-	<a href = "?p=brand.php">Brand</a>   |
-	<a href = "?p=form.php">form</a>   |
-	<a href = "?p=login.php">Login</a>  |  
-	
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Your password..">
 
-</nav>
-		<h1><h1> Login</h1></h1>
-</header>
-	
-	<div class="fab">
-<p id="center">
-	<body>
-    <div class="container">
-        <h2>Login</h2>
-        <form id="loginForm" action="#" method="post">
-            <input type="email" id="email" name="email" placeholder="Email" required><br>
-            <input type="password" id="password" name="password" placeholder="Password" required><br>
-            <input type="submit" value="Login">
-        </form>
-        <p style="text-align: center;">or</p>
-        <button onclick="showRegistrationForm()">Register</button>
-        <form id="registrationForm" action="#" method="post" style="display: none;">
-            <input type="text" id="firstName" name="firstName" placeholder="First Name" required><br>
-            <input type="text" id="lastName" name="lastName" placeholder="Last Name" required><br>
-            <input type="email" id="regEmail" name="regEmail" placeholder="Email" required><br>
-            <input type="password" id="regPassword" name="regPassword" placeholder="Password" required><br>
-            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required><br>
-            <input type="submit" value="Register">
-        </form>
-    </div>
+        <button type="submit">Login</button>
+    </form>
+    <button onclick="document.getElementById('id01').style.display='block'" class="registerbtn">Register</button>
+</div>
 
-    <script>
-        function showRegistrationForm() {
-            var loginForm = document.getElementById('loginForm');
-            var registrationForm = document.getElementById('registrationForm');
-            var registerButton = document.querySelector('button');
+<div id="id01" class="modal">
+    <form class="modal-content animate" action="/register" method="post">
+        <div class="container">
+            <label for="fname"><b>First Name</b></label>
+            <input type="text" placeholder="Enter First Name" name="fname" required>
 
-            if (registrationForm.style.display === "none") {
-                registrationForm.style.display = "block";
-                loginForm.style.display = "none";
-                registerButton.textContent = "Back to Login";
-            } else {
-                registrationForm.style.display = "none";
-                loginForm.style.display = "block";
-                registerButton.textContent = "Register";
-            }
+            <label for="lname"><b>Last Name</b></label>
+            <input type="text" placeholder="Enter Last Name" name="lname" required>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <label for="psw-repeat"><b>Confirm Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+            <button type="submit">Register</button>
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        </div>
+    </form>
+</div>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
         }
-    </script>
+    }
+</script>
 
-<footer> 
-	
-		<nav class="navbar">
+</body>
+</html>
+This code creates a login form with email and password fields, along with a "Register" button. Clicking the "Register" button opens a modal window with fields for first name, last name, email, password, and confirm password.
+
+User
+create a login page php wiith register button wich ask user first name , last name ,  email, password , confirm password .
+ChatGPT
+Sure, here's an example of a login page in PHP with a registration button:
+
+php
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+
+<?php
+// Define variables and initialize with empty values
+$fname = $lname = $email = $password = $confirm_password = "";
  
-                <a href="https://github.com/Tlogovi0/Tlogovi0.github.io">Github.io</a>   |
-		<a href="https://www.freecodecamp.org/fccc35594b7-aa93-4d23-a1da-68675e421126">freeCodeCamp</a>   |
-		<a href=https://www.codecademy.com/profiles/Tlogovi0">Codecademy</a>   |
-		<a href="https://pathfinder.w3schools.com/profile">W3schools</a>   |
-		<a href="https://www.linkedin.com/learning/?u=76141674">LinkedIn</a>   |      
-</footer>
+// Processing form data when form is submitted
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+    // Validate first name
+    $fname = trim($_POST["fname"]);
+    
+    // Validate last name
+    $lname = trim($_POST["lname"]);
+    
+    // Validate email
+    $email = trim($_POST["email"]);
+    
+    // Validate password
+    $password = trim($_POST["password"]);
+    
+    // Validate confirm password
+    $confirm_password = trim($_POST["confirm_password"]);
+    
+    // Check input errors before inserting in database
+    if(empty($fname_err) && empty($lname_err) && empty($email_err) && empty($password_err) && empty($confirm_password_err)){
+        
+        // TODO: Insert the data into your database or perform other necessary actions
+        
+        echo "Registration successful!";
+    }
+}
+?>
 
-<p>&copy; 2024 Home Paradise. All rights reserved.</p>   
-		<p>
-		<a href="http://validator.w3.org/check?uri=https://Tlogovi0.github.io/web250.io/index.htm">
-		  <img src="images/html_validation_button.gif" alt="Validate HTML">
-		</a>
-		 
-		<a href="http://jigsaw.w3.org/css-validator/validator?uri=https://Tlogovi0.github.io/web250.io/index.htm">
-		 <img src="images/validation_button_css_rectangle_blue.gif" alt="Validate CSS">
-		</a>
-		</p>
-	
+<h2>Login Form</h2>
+<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your email.."><br><br>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" placeholder="Your password.."><br><br>
+
+    <button type="submit">Login</button>
+</form>
+<br>
+
+<button onclick="document.getElementById('registerForm').style.display='block'">Register</button>
+
+<div id="registerForm" style="display:none;">
+    <h2>Register Form</h2>
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" placeholder="Your first name.."><br><br>
+        
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname" placeholder="Your last name.."><br><br>
+
+        <label for="email_reg">Email</label>
+        <input type="text" id="email_reg" name="email_reg" placeholder="Your email.."><br><br>
+
+        <label for="password_reg">Password</label>
+        <input type="password" id="password_reg" name="password_reg" placeholder="Your password.."><br><br>
+
+        <label for="confirm_password">Confirm Password</label>
+        <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm password.."><br><br>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
 </body>
 </html>
