@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Selling Business Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            background-color: #4CAF50;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 36px;
+        }
+
+        h1, h2 {
+            margin: 10px 0;
+        }
+
+        p {
+            margin: 5px 0;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        .contact-info i {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="logo">HS</div>
+        <h1>Tete Logovi</h1>
+        <h2>Home Sales Expert</h2>
+        <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i>North Tryon, Charlotte, NC</p>
+            <p><i class="fas fa-phone"></i>(123) 456-7890</p>
+            <p><i class="fas fa-envelope"></i>Tlogovi0@email.cpcc.edu</p>
+            <p><i class="fas fa-globe"></i>www.HomeParadise.com</p>
+        </div>
+    </div>
+</body>
+</html>
