@@ -5,7 +5,6 @@
 <link href="./css/default.css" rel="stylesheet" type="text/css">	
              <title>Tete Logovi the real Eagle | WEB250|Home</title>
 </head>
-<body>
 	<header>
 		<h1>Tete Logovi the real Eagle| WEB250</h1>
 
@@ -22,15 +21,8 @@
 </nav>
 		<h1><h1> Home</h1></h1>
 </header>
-  <!-- dynamic content goes here -->
 
-<?php
-	$sPage = $_GET["p"];
-	//echo ("You picked the page: " . $sPage); 
-	
-	if($sPage == "") {  $sPage = "home.php"; }
-	include($sPage);
-?>
+<body></body>
 	
 	<div class="fab">
 <p id="center">
