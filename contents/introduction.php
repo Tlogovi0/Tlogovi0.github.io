@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+<link href="./css/default.css" rel="stylesheet" type="text/css">	
+<title>Tete Logovi the real Eagle|Web250</title>
+</head>
+<body>
+	<header>
+		<h1>Tete Logovi the real Eagle|Web250|</h1>
+
+<nav class="navbar">
+
+	<a href="index.htm">Home</a>   |
+	<a href="introduction.html">Introduction</a>   | 
+	<a href="contract.html">Contract</a>   |
+	<a href="brand.html">Brand</a>   |
+	<a href="form.html">Form</a>   |
+</nav>
+<h1><h1>  Introduction</h1></h1>
+</header>
+	
+	
+	<div class="fab">
+<p id="center">
+
+
+	
+<img src="./images/profLogovi.png" width="1000" height="1000" alt="Profile Logovi" class="center">
 <figcaption> It is me  </figcaption>
 
 <ul>
@@ -26,3 +56,28 @@
 <li><b>I'd also like to Share: </b>I like to spend my time doing sporting and relaxing activities.
 </li>
 </ul>
+	</main></p></div>
+	<br>	<br>
+	<footer> 
+		<nav class="navbar">
+
+	       <a href="https://github.com/Tlogovi0/Tlogovi0.github.io">Github.io</a>   |
+		<a href="https://www.freecodecamp.org/fccc35594b7-aa93-4d23-a1da-68675e421126">freeCodeCamp</a>   |
+		<a href=https://www.codecademy.com/profiles/Tlogovi0">Codecademy</a>   |
+		<a href="https://pathfinder.w3schools.com/profile">W3schools</a>   |
+		<a href="https://www.linkedin.com/learning/?u=76141674">LinkedIn</a>   |
+		</nav>
+		  <p>&copy; 2024 Home Paradise. All rights reserved.</p>   
+		<p>
+		<a href="http://validator.w3.org/check?uri=referer" style = "text-decoration: none">
+		  <img src="images/html_validation_button.gif" alt="Validate HTML" />
+		</a>
+		 
+		<a href="http://jigsaw.w3.org/css-validator/check/referer" style = "text-decoration: none">
+		 <img src="images/validation_button_css_rectangle_blue.gif" alt="Validate CSS" />
+		</a>
+		</p>
+
+</footer>	
+</body>
+</html>
