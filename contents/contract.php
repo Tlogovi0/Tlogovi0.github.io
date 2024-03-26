@@ -5,8 +5,7 @@
 <link href="./css/default.css" rel="stylesheet" type="text/css">	
              <title>Tete Logovi the real Eagle | WEB250| Home</title>
 </head>
-<body>
-	<header>
+
 		<h1>Tete Logovi the real Eagle| WEB250</h1
 <header>
 <nav class="navbar">
@@ -17,8 +16,10 @@
 	<a href="brand.html">Brand</a>   |
 	<a href="form.html">Form</a>   |
 </nav>
-<h1><h1>Contract</h1></h1>
 </header>
+</header>
+	<h1><h1>Contract</h1></h1>
+	<body>
 	<div class="fab">
 <p id="center">
 <p>
@@ -32,6 +33,7 @@ I swear that I will only use these resources to learn and will not cut and paste
 Signed: <i>Tete K F. Logovi , 28/01/2024 </i>
 </p>
 	</div></p>
+	</body>
 <footer>
 <nav class="navbar">
                <a href="https://github.com/Tlogovi0/Tlogovi0.github.io">Github.io</a>   |
