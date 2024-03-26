@@ -1,6 +1,4 @@
-
-	
-	<h1><h1> Brand</h1></h1>
+<h1><h1> Brand</h1></h1>
 	
 	
 		<h1>Tete Logovi's HOME PARADISE</h1>
