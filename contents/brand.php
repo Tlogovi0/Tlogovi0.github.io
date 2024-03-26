@@ -7,7 +7,7 @@
 <title>Tete Logovi the Real Eagle|WEB250|Brand</title>
 </head>
 	<h1>Tete Logovi the Real Eagle|WEB250</h1>
-		
+	<header>	
 <nav class="navbar">
 
 	<a href="index.htm">Home</a>   |
@@ -16,7 +16,10 @@
 	<a href="brand.html">Brand</a>   |
 	<a href="form.html">Form</a>   |
 	</nav>
+	</header>
+	
 	<h1><h1> Brand</h1></h1>
+	
 	<body>
 
 	<div class="fab">
@@ -28,9 +31,6 @@
         <p><em>"Get your dream house with us."</em></p>
 	            <h2>Concept/Idea/Objective/Mission</h2>
 <h5>"The concept is to build and help people find the homes of their dreams at a lower cost and ensure that their homes provide you with peace and a heavenly environment."</h5>
-</nav>
-
-</header>
 
 <div class="fab">
 <p id="center">
