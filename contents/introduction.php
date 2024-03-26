@@ -6,7 +6,6 @@
 <link href="./css/default.css" rel="stylesheet" type="text/css">	
 <title>Tete Logovi the real Eagle|Web250</title>
 </head>
-<body>
 	<header>
 		<h1>Tete Logovi the real Eagle|Web250|</h1>
 
@@ -18,8 +17,9 @@
 	<a href="brand.html">Brand</a>   |
 	<a href="form.html">Form</a>   |
 </nav>
-<h1><h1>  Introduction</h1></h1>
 </header>
+		<body>
+<h1><h1>  Introduction</h1></h1>
 	
 	
 	<div class="fab">
