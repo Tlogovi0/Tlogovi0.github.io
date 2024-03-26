@@ -1,12 +1,6 @@
 
 <h1><h1>  Introduction</h1></h1>
 	
-	
-	<div class="fab">
-<p id="center">
-
-
-	
 <img src="./images/profLogovi.png" width="1000" height="1000" alt="Profile Logovi" class="center">
 <figcaption> It is me  </figcaption>
 
@@ -34,6 +28,8 @@
 <li><b>Funny/Interesting item to Remember me by:</b> Many people who know me say that i am jovial , welcoming and joyful.
 </li>	
 <li><b>I'd also like to Share: </b>I like to spend my time doing sporting and relaxing activities.
+
+	
 </li>
 </ul>
 	
