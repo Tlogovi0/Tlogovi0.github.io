@@ -1,4 +1,3 @@
-
 <h1><h1>  Introduction</h1></h1>
 	
 <img src="./images/profLogovi.png" width="1000" height="1000" alt="Profile Logovi" class="center">
@@ -32,5 +31,3 @@
 	
 </li>
 </ul>
-	
-	
