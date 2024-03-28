@@ -15,22 +15,23 @@
 	<a href="index.php?page=introduction">Introduction</a>   |
 	<a href="index.php?page=contract">Contract</a>   |
 	<a href="index.php?page=brand">Brand</a>   |
-	<a href="index.php?page=form">Form</a>   |   
-	<a href="index.php?page=login">Login</a>   |   
-
+	
+</header>
 </nav>
 	<!-- dynamic content goes here -->
 	<main>
 	<?php
-	if (!empty($_SERVER['HTTPS']) && ('on' == $_SERVER['HTTPS'])) {
-		$uri = 'https://';
-	} else {
-		$uri = 'http://';
+	$url = 'contents/home.php';
+	if (!empty($_GET['contents'])) {
+		$url = 'contents/';
+		$url .= $_GET['contents'] . '/';
 	}
-	$uri .= $_SERVER['HTTP_HOST'];
-	header('Location: '.$uri.'/dashboard/');
-	exit;
-?>
+	if (!empty($_GET['page'])) {
+		$url = 'contents/';
+		$url .= $_GET['page'] . '.php';
+	}
+	include $url;
+	?>
 	</main
 		<footer> 
 	
@@ -43,8 +44,6 @@
 		<a href="https://www.linkedin.com/learning/?u=76141674">LinkedIn</a>   | 
 	      </nav>
 </footer>
-
-<p>&copy; 2024 Home Paradise. All rights reserved.</p>   
 		<p>
 		<a href="http://validator.w3.org/check?uri=https://Tlogovi0.github.io/web250.io/index.htm">
 		  <img src="images/html_validation_button.gif" alt="Validate HTML">
