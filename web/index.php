@@ -11,7 +11,7 @@
 
 <nav class="navbar">
 
-	<a href="index.php?page=home">Home</a>   |
+	?> href="index.php?page=home">HOME</a>
 	<a href="index.php?page=introduction">Introduction</a>   |
 	<a href="index.php?page=contract">Contract</a>   |
 	<a href="index.php?page=brand">Brand</a>   |
