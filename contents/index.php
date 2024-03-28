@@ -22,17 +22,15 @@
 	<!-- dynamic content goes here -->
 	<main>
 	<?php
-	$url = 'contents/home.php';
-	if (!empty($_GET['contents'])) {
-		$url = 'contents/';
-		$url .= $_GET['contents'] . '/';
+	if (!empty($_SERVER['HTTPS']) && ('on' == $_SERVER['HTTPS'])) {
+		$uri = 'https://';
+	} else {
+		$uri = 'http://';
 	}
-	if (!empty($_GET['page'])) {
-		$url = 'contents/';
-		$url .= $_GET['page'] . '.php';
-	}
-	include $url;
-	?>
+	$uri .= $_SERVER['HTTP_HOST'];
+	header('Location: '.$uri.'/dashboard/');
+	exit;
+?>
 	</main
 		<footer> 
 	
@@ -42,7 +40,8 @@
 		<a href="https://www.freecodecamp.org/fccc35594b7-aa93-4d23-a1da-68675e421126">freeCodeCamp</a>   |
 		<a href=https://www.codecademy.com/profiles/Tlogovi0">Codecademy</a>   |
 		<a href="https://pathfinder.w3schools.com/profile">W3schools</a>   |
-		<a href="https://www.linkedin.com/learning/?u=76141674">LinkedIn</a>   |      
+		<a href="https://www.linkedin.com/learning/?u=76141674">LinkedIn</a>   | 
+	      </nav>
 </footer>
 
 <p>&copy; 2024 Home Paradise. All rights reserved.</p>   
