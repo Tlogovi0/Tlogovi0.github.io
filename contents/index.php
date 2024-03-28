@@ -19,3 +19,17 @@
 	<a href="index.php?page=login">Login</a>   |   
 
 </nav>
+		<main>
+	<?php
+	$url = 'contents/home.php';
+	if (!empty($_GET['contents'])) {
+		$url = 'contents/';
+		$url .= $_GET['contents'] . '/';
+	}
+	if (!empty($_GET['page'])) {
+		$url = 'contents/';
+		$url .= $_GET['page'] . '.php';
+	}
+	include $url;
+	?>
+	</main
