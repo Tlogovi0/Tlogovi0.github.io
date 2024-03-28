@@ -17,34 +17,17 @@
 	<a href="index.php?page=brand">Brand</a>   |
 	</nav>
 </header>
-	<!-- dynamic content goes here -->
 
 	<main>
 	<?php
-    $pageFound = true; // Assume the page is found initially
-
-    // Check if page parameter is set and not empty
-    if(isset($_GET['page']) && !empty($_GET['page'])) {
-        // Define the content file path based on the page parameter
-        $content_path = 'contents/' . $_GET['page'] . '.php';
-        
-        // if the content file exists
-        if(file_exists($content_path)) {
-            // Include the content file
-            include $content_path;
-        } else {
-            // Set pageFound to false if file does not exist
-            $pageFound = false;
-        }
-    } else {
-        // Default content for the home page
-        include 'contents/home.php';
-    }
-
-    // Display "Page not found." message if the page is not found
-    if(!$pageFound) {
-        echo 'Page not found.';
-    }
+	if (!empty($_SERVER['HTTPS']) && ('on' == $_SERVER['HTTPS'])) {
+		$uri = 'https://';
+	} else {
+		$uri = 'http://';
+	}
+	$uri .= $_SERVER['HTTP_HOST'];
+	header('Location: '.$uri.'/dashboard/');
+	exit;
 ?>
 	</main
 		<footer> 
