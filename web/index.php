@@ -7,7 +7,6 @@
 </head>
 <body>
 	<header>
-		<h1>Tete Logovi the real Eagle| WEB250</h1>
 
 <nav class="navbar">
 
@@ -45,11 +44,11 @@
 <p>&copy; 2024 Home Paradise. All rights reserved.</p>   
 		<p>
 		<a href="http://validator.w3.org/check?uri=https://Tlogovi0.github.io/web250.io/index.htm">
-		  <img src="images/html_validation_button.gif" alt="Validate HTML">
+		  <img src="images/html_validation_button.gif" alt="Validate HTML5">
 		</a>
 		 
 		<a href="http://jigsaw.w3.org/css-validator/validator?uri=https://Tlogovi0.github.io/web250.io/index.htm">
-		 <img src="images/validation_button_css_rectangle_blue.gif" alt="Validate CSS">
+		    <img src="images/validation_button_css_rectangle_blue.gif" alt="Validate CSS">
 		</a>
 		</p>
 	
