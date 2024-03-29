@@ -11,24 +11,25 @@
 
 <nav class="navbar">
 
-	<a href="index.php?page=home">HOME</a>
-	<a href="index.php?page=introduction">Introduction</a>   |
-	<a href="index.php?page=contract">Contract</a>   |
-	<a href="index.php?page=brand">Brand</a>   |
+	<a href = "?p=home.php">Home</a>   | 
+	<a href = "?p=introduction.php">Introduction</a>   | 
+	<a href = "?p=contract.php">Contract</a>   | 
+	<a href = "?p=brand.php">brand</a>   | 
 	</nav>
 </header>
 
 	<main>
-	<?php
-	if (!empty($_SERVER['HTTPS']) && ('on' == $_SERVER['HTTPS'])) {
-		$uri = 'https://';
-	} else {
-		$uri = 'http://';
-	}
-	$uri .= $_SERVER['HTTP_HOST'];
-	header('Location: '.$uri.'/dashboard/');
-	exit;
+	<!-- dynamic content goes here -->
+
+<?php
+	$sPage = $_GET["p"];
+	//echo ("You picked the page: " . $sPage); 
+	
+	if($sPage == "") {  $sPage = "home.php"; }
+	include($sPage);
 ?>
+
+
 	</main
 		<footer> 
 	
