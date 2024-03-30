@@ -7,7 +7,7 @@
 </head>
 <body>
 	<header>
-<h1>Tete Logovi the real Eagle| WEB250</h1>
+<h1>Tete Logovi the real Eagle| WEB250 Home</h1>
 <nav class="navbar">
 
 	<a href = "?p=../contents/home.php">Home</a>   | 
