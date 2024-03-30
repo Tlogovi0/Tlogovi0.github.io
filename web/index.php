@@ -7,13 +7,13 @@
 </head>
 <body>
 	<header>
-
+<h1>Tete Logovi the real Eagle| WEB250</h1>
 <nav class="navbar">
 
-	<a href = "?p=home.php">Home</a>   | 
-	<a href = "?p=introduction.php">Introduction</a>   | 
-	<a href = "?p=contract.php">Contract</a>   | 
-	<a href = "?p=brand.php">brand</a>   | 
+	<a href = "?p=../contents/home.php">Home</a>   | 
+        <a href = "?p=../contents/introduction.php">Introduction</a>   | 
+        <a href = "?p=../contents/contract.php">Contract</a>   | 
+       <a href = "?p=../contents/brand.php">brand</a>   |
 	</nav>
 </header>
 
@@ -27,9 +27,7 @@
 	if($sPage == "") {  $sPage = "home.php"; }
 	include($sPage);
 ?>
-
-
-	</main
+</main
 		<footer> 
 	
 		<nav class="navbar">
