@@ -29,7 +29,7 @@
 	if($sPage == "") {  $sPage = "home.php"; }
 	include($sPage);
 ?>
-</main
+</main></p></div>
 		<footer> 
 	
 		<nav class="navbar">
