@@ -15,6 +15,20 @@
         <a href = "?p=../contents/contract.php">Contract</a>   | 
        <a href = "?p=../contents/brand.php">brand</a>   |
 	</nav>
+		</main></p></div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<br>
+
 </header>
 <div class="fab">
 <p id="center">
