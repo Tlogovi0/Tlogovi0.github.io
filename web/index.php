@@ -16,7 +16,8 @@
        <a href = "?p=../contents/brand.php">brand</a>   |
 	</nav>
 </header>
-
+<div class="fab">
+<p id="center">
 	<main>
 	<!-- dynamic content goes here -->
 
