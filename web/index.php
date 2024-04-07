@@ -43,7 +43,7 @@
 		<a href="https://www.linkedin.com/learning/?u=76141674">LinkedIn</a>   | 
 	      </nav>
 </footer>
-<p>&copy; 2024 Home Paradise. All rights reserved.</p>   
+<p>&copy;2024 Home Paradise. All rights reserved.</p>   
 		<p>
 		<a href="http://validator.w3.org/check?uri=https://Tlogovi0.github.io/web250.io/index.htm">
 		  <img src="images/html_validation_button.gif" alt="Validate HTML5">
