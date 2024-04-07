@@ -10,10 +10,10 @@
 <h1>Tete Logovi the real Eagle| WEB250 Home</h1>
 <nav class="navbar">
 
-	<a href = "?p=../contents/home.php">Home</a>   | 
-        <a href = "?p=../contents/introduction.php">Introduction</a>   | 
-        <a href = "?p=../contents/contract.php">Contract</a>   | 
-       <a href = "?p=../contents/brand.php">brand</a>   |
+	                <a href="index.php?page=home">Home</a> |
+			<a href="index.php?page=introduction">Introduction</a> |
+			<a href="index.php?page=contract">Contract</a> |
+			<a href="index.php?page=brand">Brand</a>
 	</nav>
 
 </header>
