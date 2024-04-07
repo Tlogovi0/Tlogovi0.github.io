@@ -50,7 +50,7 @@
 		</a>
 		 
 		<a href="http://jigsaw.w3.org/css-validator/validator?uri=https://Tlogovi0.github.io/web250.io/index.htm">
-		    <img src="images/validation_button_css_rectangle_blue.gif" alt="Validate CSS">
+		<img src="images/validation_button_css_rectangle.gif " alt="Validate CSS">
 		</a>
 		</p>
 	
