@@ -10,7 +10,7 @@
 <h1>Tete Logovi Terrible Lion|WEB250 Home</h1>
 <nav class="navbar">
 
-                       <a href = "?p=../contents/home.php">Home</a>   | 
+        <a href = "?p=../contents/home.php">Home</a>   | 
         <a href = "?p=../contents/introduction.php">Introduction</a>   | 
         <a href = "?p=../contents/contract.php">Contract</a>   | 
        <a href = "?p=../contents/brand.php">brand</a>   |
@@ -25,11 +25,19 @@
 	<!-- dynamic content goes here -->
 
 <?php
-	$sPage = $_GET["p"];
-	//echo ("You picked the page: " . $sPage); 
-	
-	if($sPage == "") {  $sPage = "home.php"; }
-	include($sPage);
+$sPage = $_GET["p"];
+//echo ("You picked the page: " . $sPage);
+
+if (!empty($_GET["p"])) {
+$sPage = "contents/";
+$sPage .= $_GET["p"] . ".php";
+}
+
+if($sPage == "") {  
+$sPage =  "contents/";
+$sPage.="home" .  ".php";
+}
+include($sPage);
 ?>
 </main></p></div>
 		<footer> 
