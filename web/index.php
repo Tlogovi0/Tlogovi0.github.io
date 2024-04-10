@@ -25,19 +25,13 @@
 	<!-- dynamic content goes here -->
 
 <?php
-$sPage = $_GET["p"];
-//echo ("You picked the page: " . $sPage);
+	$sPage = $_GET["p"];
+	//echo ("You picked the page: " . $sPage); 
+	
+	if($sPage == "") {  $sPage = "home.php"; }
+	include($sPage);
+?>
 
-if (!empty($_GET["p"])) {
-$sPage = "contents/";
-$sPage .= $_GET["p"] . ".php";
-}
-
-if($sPage == "") {  
-$sPage =  "contents/";
-$sPage.="home" .  ".php";
-}
-include($sPage);
 ?>
 </main></p></div>
 		<footer> 
