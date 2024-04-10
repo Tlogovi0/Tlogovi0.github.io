@@ -33,7 +33,6 @@
 	include($sPage);
 ?>
 
-?>
 </main></p></div>
 		<footer> 
 	
