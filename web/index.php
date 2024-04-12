@@ -13,7 +13,9 @@
       <a href = "?p=../contents/home.php">Home</a>   | 
         <a href = "?p=../contents/introduction.php">Introduction</a>   | 
         <a href = "?p=../contents/contract.php">Contract</a>   | 
-       <a href = "?p=../contents/brand.php">brand</a>   |
+       <a href = "?p=../contents/brand.php">brand</a> |
+	<a href = "?p=../contents/fizzBuzzBang.php">FizzBuzzBang</a>| 
+	<a href = "?p=../contents/login.php">login</a>   | 
 
 
 
