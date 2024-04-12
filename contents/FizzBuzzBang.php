@@ -100,7 +100,6 @@
                 <a href="https://github.com/Tlogovi0/Tlogovi0.github.io">Github.io</a>   |
 		<a href="https://www.freecodecamp.org/fccc35594b7-aa93-4d23-a1da-68675e421126">freeCodeCamp</a>   |
 		<a href=https://www.codecademy.com/profiles/Tlogovi0">Codecademy</a>   |
-		<a href="https://pathfinder.w3schools.com/profile">W3schools</a>   |
 		<a href="https://www.linkedin.com/learning/?u=76141674">LinkedIn</a>   |      
 </footer>
 
@@ -110,8 +109,8 @@
 		  <img src="images/html_validation_button.gif" alt="Validate HTML" />
 		</a>
 		 
-		<a href="http://jigsaw.w3.org/css-validator/validator?uri=https://tlogovi0.github.io/web250.io/index.html">
-		 <img src="images/validation_button_css_rectangle_blue.gif" alt="Validate CSS" >
+		<a href="http://jigsaw.w3.org/css-validator/validator?uri=https://Tlogovi0.github.io/web250.io/index.htm">
+		 <img src="images/validation_button_css_rectangle.gif " alt="Validate CSS">
 
 		</a>
 		</p>
