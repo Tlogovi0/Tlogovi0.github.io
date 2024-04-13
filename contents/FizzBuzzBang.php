@@ -1,20 +1,6 @@
 
 		<h1>Tete Logovi Terrible Lion| WEB250</h1>
 
-<nav class="navbar">
-
-	<a href = "?p=index.php">Home</a>   |
-	<a href = "?p=introduction.php">Introduction</a>   |
-	<a href = "?p=contract.php">Contract</a>   |
-	<a href = "?p=brand.php">Brand</a>   |
-	<a href = "?p=form.php">form</a>   |
-	<a href = "?p=login.php">Login</a>  |  
-        <a href ="?p=FizzBuzzBang.php">FizzBuzzBang</a>  |  
-	
-
-</nav>
-</header>
-<body>
     <h2>FizzBuzzBang</h2>
     <form id="fizzBuzzForm">
         <label for="name">Name:</label>
@@ -85,7 +71,7 @@
         document.getElementById("bangWord").value = "bang";
         document.getElementById("bangNumber").value = "7";
     </script>
-	<footer> 
+	
 	
 		
  
