@@ -1,10 +1,9 @@
 
-		<h1>Tete Logovi Terrible Lion| WEB250</h1>
-
+<?php
     <h2>FizzBuzzBang</h2>
     <form id="fizzBuzzForm">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" value="John Doe" required><br><br>
+        <input type="text" id="name" name="name" value="Conan" required><br><br>
 
         <label for="startNumber">Starting Number:</label>
         <input type="number" id="startNumber" name="startNumber" value="1" required><br><br>
