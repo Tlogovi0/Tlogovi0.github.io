@@ -1,65 +1,41 @@
-<!-- Form with method POST -->
+<h1>Welcome to Your Selling Brand</h1>
+
+<!-- First Form -->
 <form action="" method="post">
-  <!-- Add fields here -->
-  <input type="submit" value="Submit (POST)">
+  <h2>Form 1 - Contact Information</h2>
+  Name: <input type="text" name="name1"><br>
+  Email: <input type="email" name="email1"><br>
+  <input type="submit" value="Submit Form 1">
 </form>
 
-<!-- Form with method GET -->
-<form action="" method="get">
-  <!-- Add fields here -->
-  <input type="submit" value="Submit (GET)">
+<hr>
+
+<!-- Second Form -->
+<form action="" method="post">
+  <h2>Form 2 - Product Inquiry</h2>
+  Product Name: <input type="text" name="product_name2"><br>
+  Quantity: <input type="number" name="quantity2" min="1"><br>
+  <input type="submit" value="Submit Form 2">
 </form>
-
-<?php
-// Processing form data with POST method
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  // Retrieve and process form data
-  $firstname = $_POST['firstname'];
-  $lastname = $_POST['lastname'];
-
-  // Output processed data
-  echo "POST Method Results:<br>";
-  echo "First Name: " . $firstname . "<br>";
-  echo "Last Name: " . $lastname . "<br>";
-}
-?>
-
-<hr/>
-
-<?php
-// Processing form data with GET method
-if (isset($_GET['firstname']) && isset($_GET['lastname'])) {
-  // Retrieve and process form data
-  $firstname = $_GET['firstname'];
-  $lastname = $_GET['lastname'];
-
-  // Output processed data
-  echo "GET Method Results:<br>";
-  echo "First Name: " . $firstname . "<br>";
-  echo "Last Name: " . $lastname . "<br>";
-}
-?>
 
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  // Processing form data with POST method
-  // Retrieve and process form data
-  $firstname = $_POST['firstname'];
-  $lastname = $_POST['lastname'];
+  if (isset($_POST['name1']) && isset($_POST['email1'])) {
+    // Processing Form 1
+    $name1 = $_POST['name1'];
+    $email1 = $_POST['email1'];
+    echo "<h3>Form 1 Results</h3>";
+    echo "Name: " . $name1 . "<br>";
+    echo "Email: " . $email1 . "<br>";
+  }
 
-  // Output processed data
-  echo "POST Method Results:<br>";
-  echo "First Name: " . $firstname . "<br>";
-  echo "Last Name: " . $lastname . "<br>";
-} elseif ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['firstname']) && isset($_GET['lastname'])) {
-  // Processing form data with GET method
-  // Retrieve and process form data
-  $firstname = $_GET['firstname'];
-  $lastname = $_GET['lastname'];
-
-  // Output processed data
-  echo "GET Method Results:<br>";
-  echo "First Name: " . $firstname . "<br>";
-  echo "Last Name: " . $lastname . "<br>";
+  if (isset($_POST['product_name2']) && isset($_POST['quantity2'])) {
+    // Processing Form 2
+    $product_name2 = $_POST['product_name2'];
+    $quantity2 = $_POST['quantity2'];
+    echo "<h3>Form 2 Results</h3>";
+    echo "Product Name: " . $product_name2 . "<br>";
+    echo "Quantity: " . $quantity2 . "<br>";
+  }
 }
 ?>
