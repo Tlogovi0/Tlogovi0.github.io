@@ -10,12 +10,12 @@
 <h1>Tete Logovi Terrible Lion|WEB250</h1>
 <nav class="navbar">
 
-        <a href = "?p=../contents/home.php">Home</a>   | 
-        <a href = "?p=../contents/introduction.php">Introduction</a>   | 
-        <a href = "?p=../contents/contract.php">Contract</a>   | 
-        <a href = "?p=../contents/brand.php">Brand</a> |
+        <a href = "?p=../contents/home.php">Home</a>| 
+        <a href = "?p=../contents/introduction.php">Introduction</a>| 
+        <a href = "?p=../contents/contract.php">Contract</a>| 
+        <a href = "?p=../contents/brand.php">Brand</a>|
 	<a href = "?p=../contents/fizzBuzzBang.php">FizzBuzzBang</a>| 
-	<a href = "?p=../contents/login.php">Login</a> | 
+	<a href = "?p=../contents/login.php">Login</a>| 
 	<a href = "?p=../contents/findMe.php">FindMe</a>| 
 	<a href = "?p=../contents/forms.php">Forms</a>| 
 
