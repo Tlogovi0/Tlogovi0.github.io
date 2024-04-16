@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Login Page</title>
-</head>
-<body>
+
    <h2>Login</h2>
     <form action="authenticate.php" method="post">
         <label for="username">Username:</label><br>
@@ -77,5 +72,4 @@ session_destroy();
 header('Location: login.php');
 exit();
 ?>
-</body>
-</html>
+
