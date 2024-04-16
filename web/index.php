@@ -48,22 +48,4 @@
 </body>
 </html>
  
-                <a href="https://github.com/Tlogovi0/Tlogovi0.github.io">Github.io</a>   |
-		<a href="https://www.freecodecamp.org/fccc35594b7-aa93-4d23-a1da-68675e421126">freeCodeCamp</a>   |
-		<a href=https://www.codecademy.com/profiles/Tlogovi0">Codecademy</a>   |
-		<a href="https://www.linkedin.com/learning/?u=76141674">LinkedIn</a>   | 
-	      </nav>
-</footer>
-<p>&copy;2024 Home Paradise. All rights reserved.</p>   
-		<p>
-		<a href="http://validator.w3.org/check?uri=https://Tlogovi0.github.io/web250.io/index.htm">
-		  <img src="images/html_validation_button.gif" alt="Validate HTML5">
-		</a>
-		 
-		<a href="http://jigsaw.w3.org/css-validator/validator?uri=https://Tlogovi0.github.io/web250.io/index.htm">
-		<img src="images/validation_button_css_rectangle.gif " alt="Validate CSS">
-		</a>
-		</p>
-	
-</body>
-</html>
+        
