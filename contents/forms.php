@@ -1,4 +1,4 @@
-<h1>Welcome to Your Selling Brand</h1>
+<h2>Welcome to my forms</h2>
 
 <!-- First Form -->
 <form action="" method="post">
