@@ -17,6 +17,7 @@
 	<a href = "?p=../contents/fizzBuzzBang.php">FizzBuzzBang</a>| 
 	<a href = "?p=../contents/login.php">Login</a> | 
 	<a href = "?p=../contents/findMe.php">FindMe</a>| 
+	<a href = "?p=../contents/forms.php">Forms</a>| 
 
 
 
