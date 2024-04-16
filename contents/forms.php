@@ -24,7 +24,7 @@
     <option value="other">Other</option>
   </select><br>
 
-  <label for="rating">Rate our company (1-5):</label>
+  <label for="rating">Rate Home Paradise (1-5):</label>
   <input type="number" name="rating" id="rating" min="1" max="5" required><br>
 
   <input type="submit" value="Submit (POST)">
@@ -32,7 +32,7 @@
 
 <!-- Form with method GET -->
 <form action="" method="get">
-  <h2>Customer Information</h2>
+  <h2>Customer Information </h2>
   <label for="first_name">First Name:</label>
   <input type="text" name="first_name" id="first_name" required><br>
 
@@ -54,7 +54,7 @@
     <option value="other">Other</option>
   </select><br>
 
-  <label for="rating">Rate our company (1-5):</label>
+  <label for="rating">Rate Home Paradise (1-5):</label>
   <input type="number" name="rating" id="rating" min="1" max="5" required><br>
 
   <input type="submit" value="Submit (GET)">
