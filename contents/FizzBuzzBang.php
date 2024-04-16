@@ -2,7 +2,7 @@
 <?php
     <h2>FizzBuzzBang</h2>
 
-    <form method="post">
+   <form method="post">
         <label for="name">Name:</label><br>
         <input type="text" id="name" name="name" value="<?php echo isset($_POST['name']) ? htmlspecialchars($_POST['name']) : 'Ferdinand'; ?>"><br>
         <label for="start">Starting Number:</label><br>
