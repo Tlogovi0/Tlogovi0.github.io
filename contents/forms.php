@@ -2,64 +2,102 @@
 
 <!-- Form with method POST -->
 <form action="" method="post">
-  <h2>Rate Our Company (POST)</h2>
-  <label for="name_post">Your Name:</label>
-  <input type="text" name="name_post" id="name_post" required><br>
+  <h2>Customer Information</h2>
+  <label for="first_name">First Name:</label>
+  <input type="text" name="first_name" id="first_name" required><br>
 
-  <label for="rating_post">Rating:</label>
-  <select name="rating_post" id="rating_post">
-    <option value="5">Excellent</option>
-    <option value="4">Very Good</option>
-    <option value="3">Good</option>
-    <option value="2">Fair</option>
-    <option value="1">Poor</option>
+  <label for="last_name">Last Name:</label>
+  <input type="text" name="last_name" id="last_name" required><br>
+
+  <label for="email">Email:</label>
+  <input type="email" name="email" id="email" required><br>
+
+  <label for="message">Message:</label><br>
+  <textarea name="message" id="message" rows="4" cols="50"></textarea><br>
+
+  <label for="discovery">How did you discover us?</label>
+  <select name="discovery" id="discovery">
+    <option value="search_engine">Search Engine</option>
+    <option value="social_media">Social Media</option>
+    <option value="word_of_mouth">Word of Mouth</option>
+    <option value="advertisement">Advertisement</option>
+    <option value="other">Other</option>
   </select><br>
 
-  <input type="submit" value="Submit Rating (POST)">
+  <label for="rating">Rate our company (1-5):</label>
+  <input type="number" name="rating" id="rating" min="1" max="5" required><br>
+
+  <input type="submit" value="Submit (POST)">
 </form>
 
 <!-- Form with method GET -->
 <form action="" method="get">
-  <h2>Rate Our Company (GET)</h2>
-  <label for="name_get">Your Name:</label>
-  <input type="text" name="name_get" id="name_get" required><br>
+  <h2>Customer Information</h2>
+  <label for="first_name">First Name:</label>
+  <input type="text" name="first_name" id="first_name" required><br>
 
-  <label for="rating_get">Rating:</label>
-  <select name="rating_get" id="rating_get">
-    <option value="5">Excellent</option>
-    <option value="4">Very Good</option>
-    <option value="3">Good</option>
-    <option value="2">Fair</option>
-    <option value="1">Poor</option>
+  <label for="last_name">Last Name:</label>
+  <input type="text" name="last_name" id="last_name" required><br>
+
+  <label for="email">Email:</label>
+  <input type="email" name="email" id="email" required><br>
+
+  <label for="message">Message:</label><br>
+  <textarea name="message" id="message" rows="4" cols="50"></textarea><br>
+
+  <label for="discovery">How did you discover us?</label>
+  <select name="discovery" id="discovery">
+    <option value="search_engine">Search Engine</option>
+    <option value="social_media">Social Media</option>
+    <option value="word_of_mouth">Word of Mouth</option>
+    <option value="advertisement">Advertisement</option>
+    <option value="other">Other</option>
   </select><br>
 
-  <input type="submit" value="Submit Rating (GET)">
+  <label for="rating">Rate our company (1-5):</label>
+  <input type="number" name="rating" id="rating" min="1" max="5" required><br>
+
+  <input type="submit" value="Submit (GET)">
 </form>
 
 <hr/>
 
 <?php
-// Process Form with POST method
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['name_post']) && isset($_POST['rating_post'])) {
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['first_name']) && isset($_POST['last_name']) && isset($_POST['email']) && isset($_POST['message']) && isset($_POST['discovery']) && isset($_POST['rating'])) {
   // Retrieve and process form data
-  $name_post = $_POST['name_post'];
-  $rating_post = $_POST['rating_post'];
+  $first_name = $_POST['first_name'];
+  $last_name = $_POST['last_name'];
+  $email = $_POST['email'];
+  $message = $_POST['message'];
+  $discovery = $_POST['discovery'];
+  $rating = $_POST['rating'];
 
   // Display processed data
-  echo "<h3>Thank You for Your Rating!</h3>";
-  echo "<p>Your Name: $name_post</p>";
-  echo "<p>Rating: $rating_post</p>";
+  echo "<h3>POST Method Results</h3>";
+  echo "<p>First Name: $first_name</p>";
+  echo "<p>Last Name: $last_name</p>";
+  echo "<p>Email: $email</p>";
+  echo "<p>Message: $message</p>";
+  echo "<p>How did you discover us? $discovery</p>";
+  echo "<p>Rating: $rating</p>";
 }
 
-// Process Form with GET method
-elseif ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['name_get']) && isset($_GET['rating_get'])) {
+elseif ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['first_name']) && isset($_GET['last_name']) && isset($_GET['email']) && isset($_GET['message']) && isset($_GET['discovery']) && isset($_GET['rating'])) {
   // Retrieve and process form data
-  $name_get = $_GET['name_get'];
-  $rating_get = $_GET['rating_get'];
+  $first_name = $_GET['first_name'];
+  $last_name = $_GET['last_name'];
+  $email = $_GET['email'];
+  $message = $_GET['message'];
+  $discovery = $_GET['discovery'];
+  $rating = $_GET['rating'];
 
   // Display processed data
-  echo "<h3>Thank You for Your Rating!</h3>";
-  echo "<p>Your Name: $name_get</p>";
-  echo "<p>Rating: $rating_get</p>";
+  echo "<h3>GET Method Results</h3>";
+  echo "<p>First Name: $first_name</p>";
+  echo "<p>Last Name: $last_name</p>";
+  echo "<p>Email: $email</p>";
+  echo "<p>Message: $message</p>";
+  echo "<p>How did you discover us? $discovery</p>";
+  echo "<p>Rating: $rating</p>";
 }
 ?>
