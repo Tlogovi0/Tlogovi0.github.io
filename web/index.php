@@ -29,9 +29,11 @@
 	<!-- dynamic content goes here -->
 
 <?php
-                    $page = isset($_GET['p']) ? $_GET['p'] : 'home';
-                    include('./contents/' . $page . '.php');
-        
+	$sPage = $_GET["p"];
+	//echo ("You picked the page: " . $sPage); 
+	
+	if($sPage == "") {  $sPage = "home.php"; }
+	include($sPage);
 ?>
 
 </main></p></div>
@@ -58,3 +60,4 @@
 	
 </body>
 </html>
+
