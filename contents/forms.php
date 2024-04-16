@@ -1,4 +1,4 @@
-<h2>Welcome to my forms</h2>
+<h2> forms</h2>
 
 <!-- Form with method POST -->
 <form action="" method="post">
