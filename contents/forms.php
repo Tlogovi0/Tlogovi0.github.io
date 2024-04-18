@@ -100,7 +100,7 @@ elseif ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['first_name']) && iss
         echo "</section>";
         
 }
-?>
+  
   <h2>Everything form</h2>
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
         <label for="name">Name:</label>
