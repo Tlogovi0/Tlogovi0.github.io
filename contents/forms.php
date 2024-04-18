@@ -58,6 +58,7 @@
   <input type="number" name="rating" id="rating" min="1" max="5" required><br>
 
   <input type="submit" value="Submit (GET)">
+  <input type="hidden" name="p" value="../contents/forms.php">
 </form>
 
 <hr/>
