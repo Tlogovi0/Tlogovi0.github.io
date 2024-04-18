@@ -1,4 +1,4 @@
-<h2> forms</h2>
+v<h2> forms</h2>
 
 <!-- Form with method POST -->
 <form action="" method="post">
@@ -100,7 +100,7 @@ elseif ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['first_name']) && iss
         echo "</section>";
         
 }
- <h2>Home Selling Form</h2>
+ <h2>Everything form</h2>
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required><br><br>
