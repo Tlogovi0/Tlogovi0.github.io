@@ -136,6 +136,7 @@ elseif ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['first_name']) && iss
         <input type="file" id="image" name="image"><br><br>
         
         <input type="submit" value="Submit">
+      <input type="hidden" name="p" value="../contents/forms.php">
     </form>
 
     <?php
