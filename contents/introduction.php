@@ -2,7 +2,7 @@
 	
 <img src="./images/profLogovi.png" width="1000" height="1000" alt="Profile Logovi" class="center">
 <figcaption> It is me  </figcaption>
-
+<ul class="rio">
 <ul>
 <li><b> Background:</b> I am of Togolese nationality. I grew up in Togo. I had my high school diploma and after that I had my diploma in marketing management. My first language is French.
 </li>
