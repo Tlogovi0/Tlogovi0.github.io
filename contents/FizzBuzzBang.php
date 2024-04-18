@@ -1,5 +1,4 @@
 
-<?php
     <h2>FizzBuzzBang</h2>
 
    <form method="post">
