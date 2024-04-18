@@ -95,7 +95,7 @@ elseif ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['first_name']) && iss
   // Display processed data
   echo "<h3>GET Method Results</h3>";
   echo "<section>";
-        echo "<h4>Submission completed!</h4>";
+        echo "<h4>Submission completed,$first_name!</h4>";
         echo "<p>Thanks for choosing us. </p>";
         echo "</section>";
         
