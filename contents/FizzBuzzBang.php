@@ -1,47 +1,69 @@
   <h2>FizzBuzzBang</h2>
 
-   <form method="post">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" value="<?php echo isset($_POST['name']) ? htmlspecialchars($_POST['name']) : 'Ferdinand'; ?>"><br>
-        <label for="start">Starting Number:</label><br>
-        <input type="number" id="start" name="start" value="<?php echo isset($_POST['start']) ? htmlspecialchars($_POST['start']) : ''; ?>"><br>
-        <label for="end">Ending Number:</label><br>
-        <input type="number" id="end" name="end" value="<?php echo isset($_POST['end']) ? htmlspecialchars($_POST['end']) : ''; ?>"><br>
-        <label for="fizzWord">Fizz Word:</label><br>
-        <input type="text" id="fizzWord" name="fizzWord" value="<?php echo isset($_POST['fizzWord']) ? htmlspecialchars($_POST['fizzWord']) : 'fizz'; ?>"><br>
-        <label for="fizzNum">Fizz Number:</label><br>
-        <input type="number" id="fizzNum" name="fizzNum" value="<?php echo isset($_POST['fizzNum']) ? htmlspecialchars($_POST['fizzNum']) : '3'; ?>"><br>
-        <label for="buzzWord">Buzz Word:</label><br>
-        <input type="text" id="buzzWord" name="buzzWord" value="<?php echo isset($_POST['buzzWord']) ? htmlspecialchars($_POST['buzzWord']) : 'buzz'; ?>"><br>
-        <label for="buzzNum">Buzz Number:</label><br>
-        <input type="number" id="buzzNum" name="buzzNum" value="<?php echo isset($_POST['buzzNum']) ? htmlspecialchars($_POST['buzzNum']) : '5'; ?>"><br>
-        <label for="bangWord">Bang Word:</label><br>
-        <input type="text" id="bangWord" name="bangWord" value="<?php echo isset($_POST['bangWord']) ? htmlspecialchars($_POST['bangWord']) : 'bang'; ?>"><br>
-        <label for="bangNum">Bang Number:</label><br>
-        <input type="number" id="bangNum" name="bangNum" value="<?php echo isset($_POST['bangNum']) ? htmlspecialchars($_POST['bangNum']) : '7'; ?>"><br><br>
-        <input type="submit" name="submit" value="Generate FizzBuzzBang">
-    </form>
+  <?php
+    // Initialize variables with default values
+    $name = "Tete";
+    $start_num = "";
+    $end_num = "";
+    $fizz_word = "fizz";
+    $fizz_num = "3";
+    $buzz_word = "buzz";
+    $buzz_num = "5";
+    $bang_word = "bang";
+    $bang_num = "7";
 
-    <?php
-    if(isset($_POST['submit'])){
-        $name = isset($_POST['name']) ? $_POST['name'] : 'Ferdinand';
-        $start = isset($_POST['start']) ? intval($_POST['start']) : 1;
-        $end = isset($_POST['end']) ? intval($_POST['end']) : 100;
-        $fizzWord = isset($_POST['fizzWord']) ? $_POST['fizzWord'] : 'fizz';
-        $fizzNum = isset($_POST['fizzNum']) ? intval($_POST['fizzNum']) : 3;
-        $buzzWord = isset($_POST['buzzWord']) ? $_POST['buzzWord'] : 'buzz';
-        $buzzNum = isset($_POST['buzzNum']) ? intval($_POST['buzzNum']) : 5;
-        $bangWord = isset($_POST['bangWord']) ? $_POST['bangWord'] : 'bang';
-        $bangNum = isset($_POST['bangNum']) ? intval($_POST['bangNum']) : 7;
+    // Check if form is submitted
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Collect user inputs
+        $name = $_POST["name"];
+        $start_num = $_POST["start_num"];
+        $end_num = $_POST["end_num"];
+        $fizz_word = $_POST["fizz_word"];
+        $fizz_num = $_POST["fizz_num"];
+        $buzz_word = $_POST["buzz_word"];
+        $buzz_num = $_POST["buzz_num"];
+        $bang_word = $_POST["bang_word"];
+        $bang_num = $_POST["bang_num"];
 
+        // Generate greeting
         echo "<h2>Hello, $name!</h2>";
-        echo "<p>Here is your FizzBuzzBang:</p>";
-        for ($i = $start; $i <= $end; $i++) {
-            $output = '';
-            if ($i % $fizzNum == 0) $output .= $fizzWord;
-            if ($i % $buzzNum == 0) $output .= $buzzWord;
-            if ($i % $bangNum == 0) $output .= $bangWord;
-            echo $output ? "<p>$output</p>" : "<p>$i</p>";
+
+        // Generate FizzBuzzBang results
+        for ($i = $start_num; $i <= $end_num; $i++) {
+            if ($i % $fizz_num == 0 && $i % $buzz_num == 0 && $i % $bang_num == 0) {
+                echo "$bang_word";
+            } elseif ($i % $fizz_num == 0 && $i % $buzz_num == 0) {
+                echo "$fizz_word$buzz_word";
+            } elseif ($i % $fizz_num == 0 && $i % $bang_num == 0) {
+                echo "$fizz_word$bang_word";
+            } elseif ($i % $buzz_num == 0 && $i % $bang_num == 0) {
+                echo "$buzz_word$bang_word";
+            } elseif ($i % $fizz_num == 0) {
+                echo "$fizz_word";
+            } elseif ($i % $buzz_num == 0) {
+                echo "$buzz_word";
+            } elseif ($i % $bang_num == 0) {
+                echo "$bang_word";
+            } else {
+                echo "$i";
+            }
+            echo "<br>";
         }
     }
     ?>
+
+    <h2>FizzBuzzBang Form</h2>
+    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+        Name: <input type="text" name="name" value="<?php echo $name; ?>"><br><br>
+        Starting Number: <input type="number" name="start_num" value="<?php echo $start_num; ?>"><br><br>
+        Ending Number: <input type="number" name="end_num" value="<?php echo $end_num; ?>"><br><br>
+        Word for Fizz: <input type="text" name="fizz_word" value="<?php echo $fizz_word; ?>"><br><br>
+        Number for Fizz: <input type="number" name="fizz_num" value="<?php echo $fizz_num; ?>"><br><br>
+        Word for Buzz: <input type="text" name="buzz_word" value="<?php echo $buzz_word; ?>"><br><br>
+        Number for Buzz: <input type="number" name="buzz_num" value="<?php echo $buzz_num; ?>"><br><br>
+        Word for Bang: <input type="text" name="bang_word" value="<?php echo $bang_word; ?>"><br><br>
+        Number for Bang: <input type="number" name="bang_num" value="<?php echo $bang_num; ?>"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
