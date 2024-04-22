@@ -1,5 +1,4 @@
-
-    <h2>FizzBuzzBang</h2>
+  <h2>FizzBuzzBang</h2>
 
    <form method="post">
         <label for="name">Name:</label><br>
