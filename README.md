@@ -1,1 +1,0 @@
-I am a student in IT database at CPCC. I'm in my last semester for graduate. I am Togolese and my first language is French. I studied English at school when I was in high school. I like sports and traveling
