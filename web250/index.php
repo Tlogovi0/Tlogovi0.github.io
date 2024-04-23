@@ -6,34 +6,43 @@
              <title>Tete Logovi Terrible Lion|WEB250|Home</title>
 </head>
 <body>
-	<header>
-<h1>Tete Logovi Terrible Lion|WEB250</h1>
-<nav class="navbar">
-
-        <a href = "?p=home">Home</a>| 
-        <a href = "?p=../contents/introduction.php">Introduction</a>| 
-        <a href = "?p=../contents/contract.php">Contract</a>| 
-        <a href = "?p=../contents/brand.php">Brand</a>|
-	<a href = "?p=../contents/fizzBuzzBang.php">FizzBuzzBang</a>| 
-	<a href = "?p=../contents/login.php">Login</a>| 
-	<a href = "?p=../contents/findMe.php">FindMe</a>| 
-	<a href = "?p=../contents/forms.php">Forms</a>| 
-
-
-
+<header>
+	<h1>Tete Logovi Terrible Lion|WEB250</h1>
+	<nav class="navbar">
+        
+		<a href = "index.html">HTML Home</a>| 
+		<a href = "?p=home">PHP Home</a>| 
+        <a href = "?p=introduction">Introduction</a>| 
+        <a href = "?p=contract">Contract</a>| 
+        <a href = "?p=brand">Brand</a>|
+		<a href = "?p=fizzbuzzbang">FizzBuzzBang</a>| 
+		<a href = "?p=login">Login</a>| 
+		<a href = "?p=findme">FindMe</a>| 
+		<a href = "?p=forms">Forms</a>
 	</nav>
-
 </header>
-<div class="fab">
-<p id="center">
-	<main>
+<main>
+	<div class="fab">
+	<p id="center">
+
 	<!-- dynamic content goes here -->
 
 <?php
+if($_GET) 
+{
+	//echo("<h1>it found it<h1>");
 	$sPage = $_GET["p"];
-	//echo ("You picked the page: " . $sPage); 
+}
+else  
+{
+	//echo("<h1>it failed it<h1>");
+    $sPage = "home";
+}
+
+
+	//echo ("<h1>You picked the page: " . $sPage . "<h1>"); 
 	
-	if($sPage == "") {  $sPage = "home.php"; }
+	$sPage = "contents/" . $sPage . ".php";
 	include($sPage);
 ?>
 
@@ -50,7 +59,8 @@
 </footer>
 <p>&copy;2024 Home Paradise. All rights reserved.</p>   
 		<p>
-		<a href="http://validator.w3.org/check?uri=https://Tlogovi0.github.io/web250.io/index.htm">
+		<a href="http://validator.w3.org/check?uri=https://Tlogovi0.github.io/web250.io/index.htm"
+		style="text-decoration:none;">
 		  <img src="images/html_validation_button.gif" alt="Validate HTML5">
 		</a>
 		 

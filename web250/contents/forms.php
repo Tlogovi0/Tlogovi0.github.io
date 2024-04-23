@@ -64,6 +64,7 @@
 <hr/>
 
 <?php
+
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['first_name']) && isset($_POST['last_name']) && isset($_POST['email']) && isset($_POST['message']) && isset($_POST['discovery']) && isset($_POST['rating'])) {
   // Retrieve and process form data
   $first_name = $_POST['first_name'];
@@ -100,6 +101,7 @@ elseif ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['first_name']) && iss
         echo "</section>";
         
 }
+?>
  <h2>Everything form</h2>
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
         <label for="name">Name:</label>
@@ -138,7 +140,8 @@ elseif ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['first_name']) && iss
     </form>
 
     <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if ($_SERVER["REQUEST_METHOD"] == "POST") 
+    {
         echo "<h2>Form Results:</h2>";
         echo "Name: " . htmlspecialchars($_POST["name"]) . "<br>";
         echo "Email: " . htmlspecialchars($_POST["email"]) . "<br>";
@@ -152,7 +155,8 @@ elseif ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['first_name']) && iss
             echo "Pets: None<br>";
         }
         // Process image upload if needed
-        if (isset($_FILES['image']) && $_FILES['image']['error'] === UPLOAD_ERR_OK) {
+        if (isset($_FILES['image']) && $_FILES['image']['error'] === UPLOAD_ERR_OK) 
+        {
             $tmp_name = $_FILES['image']['tmp_name'];
             $name = basename($_FILES['image']['name']);
             move_uploaded_file($tmp_name, "uploads/$name");
