@@ -1,4 +1,5 @@
 <?php
+echo("<h1>welcome</h1>");
 session_start();
 
 // Check if user is logged in
