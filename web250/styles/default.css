@@ -7,21 +7,16 @@ body
     margin-left: 100px;
     text-align: justify;
 }
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-} 
+
 a { color: rgb(142, 198, 142); } 
 a:visited { color: rgb(243, 239, 236); }
 a:hover { color: rgb(139, 5, 0); }
 
-h1, header{
+ header {
   text-align: center;
 }
 
-.fab{
+main {
   background-color: indigo; 
   
   margin: 10px auto; 
@@ -39,8 +34,11 @@ nav{
 	margin: auto;
 	font-size: 20px;
 	padding: 12px;
+  background-color: #333; 
+  text-align: center;
+	margin: auto;
 }
-nav a{
+nav a {
 	color: white;
 	padding: 10px;
 	margin: auto;
@@ -50,7 +48,7 @@ nav ul li a:hover {
     color: #F2E5D3; /* Light beige */
 }
 
-footer{
+footer {
 	text-align: center;
 	margin: auto;
 }
@@ -64,19 +62,4 @@ footer{
     height: auto;
 }
     
-.navbar {
-  background-color: #333; 
-}
-
-header ul, p, div,h1, h2, h3, h4, h5,footer, nav {
-    text-align: center;
-}
-    
-.navbar{
-	text-align: center;
-	margin: auto;
-}
-.rio {
-	text-align: justify;
-}
 	

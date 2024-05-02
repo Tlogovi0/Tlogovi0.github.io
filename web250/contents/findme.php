@@ -1,6 +1,7 @@
 <?php
-echo("<h1>welcome</h1>");
+echo("<h2>Welcome to my application!</h2>");
 session_start();
+
 
 // Check if user is logged in
 function check_login() {
