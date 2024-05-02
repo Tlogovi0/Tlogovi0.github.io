@@ -12,9 +12,9 @@
         
 		<a href = "index.html">HTML Home</a>| 
 		<a href = "?p=home">PHP Home</a>| 
-        <a href = "?p=introduction">Introduction</a>| 
-        <a href = "?p=contract">Contract</a>| 
-        <a href = "?p=brand">Brand</a>|
+       		 <a href = "?p=introduction">Introduction</a>| 
+        	<a href = "?p=contract">Contract</a>| 
+        	<a href = "?p=brand">Brand</a>|
 		<a href = "?p=fizzbuzzbang">FizzBuzzBang</a>| 
 		<a href = "?p=login">Login</a>| 
 		<a href = "?p=findme">FindMe</a>| 
