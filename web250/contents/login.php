@@ -1,75 +1,75 @@
-
-   <h2>Login</h2>
-    <form action="authenticate.php" method="post">
-        <label for="username">Username:</label><br>
-        <input type="text" id="username" name="username" required><br>
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password" required><br>
-        <button type="submit">Login</button>
-    </form>
-   <?php
+<?php
 session_start();
 
-// Include database connection
-require_once 'db.php';
+// Check if form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Retrieve username and password from form
+    $username = $_POST["username"];
+    $password = $_POST["password"];
+    
+    // Connect to database
+    $conn = new mysqli("localhost", "username", "password", "database_name");
 
-// Get username and password from form
-$username = $_POST['username'];
-$password = $_POST['password'];
-
-// Fetch user from database
-$sql = "SELECT * FROM users WHERE username = '$username'";
-$result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
-    $user = $result->fetch_assoc();
-    // Verify password
-    if (password_verify($password, $user['password'])) {
-        $_SESSION['user'] = $user;
-        header('Location: dashboard.php');
-    } else {
-        $_SESSION['error'] = 'Invalid username or password.';
-        header('Location: login.php');
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
     }
-} else {
-    $_SESSION['error'] = 'User not found.';
-    header('Location: login.php');
-}
 
-$conn->close();
+    // Query to fetch user details
+    $sql = "SELECT * FROM users WHERE username = '$username'";
+    $result = $conn->query($sql);
+
+    if ($result->num_rows == 1) {
+        // User found, verify password
+        $row = $result->fetch_assoc();
+        if (password_verify($password, $row["password"])) {
+            // Password correct, set session variables
+            $_SESSION["loggedin"] = true;
+            $_SESSION["username"] = $username;
+            $_SESSION["first_name"] = $row["first_name"];
+            $_SESSION["last_name"] = $row["last_name"];
+            $_SESSION["email"] = $row["email"];
+            header("Location: welcome.php"); // Redirect to welcome page
+        } else {
+            // Password incorrect
+            $_SESSION["login_error"] = "Invalid username or password";
+            header("Location: login.php"); // Redirect back to login page
+        }
+    } else {
+        // User not found
+        $_SESSION["login_error"] = "Invalid username or password";
+        header("Location: login.php"); // Redirect back to login page
+    }
+
+    $conn->close();
+}
 ?>
+Welcome page (welcome.php):
+php
+Copy code
 <?php
 session_start();
 
 // Check if user is logged in
-if (!isset($_SESSION['user'])) {
-    header('Location: login.php');
-    exit();
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+    header("Location: login.php");
+    exit;
 }
 
-// Display user information
-$user = $_SESSION['user'];
-echo '<h2>Welcome, ' . $user['first_name'] . ' ' . $user['last_name'] . '</h2>';
-echo '<p>Email: ' . $user['email'] . '</p>';
-echo '<a href="logout.php">Logout</a>';
-?>
-<?php
-$serverName = "localhost";
-$username = "$uper";
-$password = "$ecret";
-$dbName = "your_database";
-
-// Create connection
-$conn = new mysqli($serverName, $username, $password, $dbName);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-    <?php
-session_start();
-session_destroy();
-header('Location: login.php');
-exit();
+// Display welcome message
+echo "Welcome, " . $_SESSION["first_name"] . " " . $_SESSION["last_name"];
 ?>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+</head>
+<body>
+    <h2>Welcome, <?php echo $_SESSION["first_name"] . " " . $_SESSION["last_name"]; ?></h2>
+    <p>Email: <?php echo $_SESSION["email"]; ?></p>
+    <a href="logout.php">Logout</a>
+</body>
+</html>
